@@ -37,34 +37,33 @@ module "example_module_test" {
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.12.26 |
-| aws | >= 3.0 |
-| local | 1.4.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12.26 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.0 |
+| <a name="requirement_local"></a> [local](#requirement\_local) | >= 1.4, <3.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | >= 3.0 |
-| local | 1.4.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 3.0 |
+| <a name="provider_local"></a> [local](#provider\_local) | >= 1.4, <3.0 |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| autoscaling\_group\_arn | The name of the Auto Scaling group to which you want to assign the lifecycle hook to | `string` | n/a | yes |
-| autoscaling\_group\_name | The name of the Auto Scaling group to which you want to assign the lifecycle hook to | `string` | n/a | yes |
-| ecs\_cluster\_arn | Specifies the ECS Cluster ARN with which the resources would be associated | `string` | n/a | yes |
-| ecs\_cluster\_name | Specifies the ECS Cluster Name with which the resources would be associated | `string` | n/a | yes |
-| region | AWS Region for ECS cluster | `string` | n/a | yes |
-| tags | Additional tags (\_e.g.\_ { BusinessUnit : ABC }) | `map(string)` | `{}` | no |
+| <a name="input_autoscaling_group_arn"></a> [autoscaling\_group\_arn](#input\_autoscaling\_group\_arn) | The name of the Auto Scaling group to which you want to assign the lifecycle hook to | `string` | n/a | yes |
+| <a name="input_autoscaling_group_name"></a> [autoscaling\_group\_name](#input\_autoscaling\_group\_name) | The name of the Auto Scaling group to which you want to assign the lifecycle hook to | `string` | n/a | yes |
+| <a name="input_ecs_cluster_arn"></a> [ecs\_cluster\_arn](#input\_ecs\_cluster\_arn) | Specifies the ECS Cluster ARN with which the resources would be associated | `string` | n/a | yes |
+| <a name="input_ecs_cluster_name"></a> [ecs\_cluster\_name](#input\_ecs\_cluster\_name) | Specifies the ECS Cluster Name with which the resources would be associated | `string` | n/a | yes |
+| <a name="input_region"></a> [region](#input\_region) | AWS Region for ECS cluster | `string` | n/a | yes |
+| <a name="input_tags"></a> [tags](#input\_tags) | Additional tags (\_e.g.\_ { BusinessUnit : ABC }) | `map(string)` | `{}` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| sns\_topic\_arn | Topic used by ASG to send notifications when instance state is changing |
-
+| <a name="output_sns_topic_arn"></a> [sns\_topic\_arn](#output\_sns\_topic\_arn) | Topic used by ASG to send notifications when instance state is changing |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Development
